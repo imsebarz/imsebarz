@@ -1,68 +1,74 @@
-# Gatsby + Cosmic
+# Sebastian Ruiz
 
-![gatsby-blog-cosmicjs](https://cdn.cosmicjs.com/fe5196f0-42c2-11ea-8d10-df553329919a-gatsby-blog-cosmic.png "The index page of the starter blog")
+Senior Frontend Developer building fast, accessible and product-grade web experiences with React, TypeScript, Next.js and GraphQL.
 
-> This repo contains an example blog website that is built with [Gatsby](https://www.gatsbyjs.org/), and [Cosmic](https://www.cosmicjs.com).
+<p>
+  <a href="https://sebasruiz.com"><img src="https://img.shields.io/badge/Portfolio-sebasruiz.com-004747?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" /></a>
+  <a href="https://www.linkedin.com/in/imsebarz/"><img src="https://img.shields.io/badge/LinkedIn-imsebarz-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+  <a href="https://github.com/imsebarz"><img src="https://img.shields.io/badge/GitHub-imsebarz-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
+  <a href="mailto:imsebarz@gmail.com"><img src="https://img.shields.io/badge/Email-imsebarz%40gmail.com-BB001B?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+</p>
 
-> [See live demo hosted on Netlify](https://gatsby-blog-cosmicjs.netlify.com/)
+I am a frontend-focused product engineer from Medellin, Colombia. I care about the full path from polished UI to reliable delivery: architecture, accessibility, performance, testing, documentation and developer experience.
 
-> Uses the [Cosmic Gatsby Source Plugin](https://www.npmjs.com/package/gatsby-source-cosmicjs)
+At Globant, I have worked on Choice Hotels web experiences used at large scale, including booking flows, property pages, rate filters, Core Web Vitals work, A/B testing integrations, WCAG fixes and JavaScript to TypeScript migrations.
 
-## Prerequisites
+Outside client work, I build products and tools around knowledge systems, AI workflows, e-commerce and local-first software. I like projects where the interface has to feel excellent and the system behind it has to hold up.
 
-- Node (I recommend using v8.2.0 or higher)
-- [Gatsby CLI](https://www.gatsbyjs.org/docs/)
+## Current Focus
 
-## Install
+- Building full-stack products with Next.js, React, TypeScript, Supabase, Prisma and Postgres.
+- Exploring local-first knowledge management, semantic search and AI-assisted workflows.
+- Shipping MCP and LLM tooling that connects real user data with AI interfaces.
+- Improving frontend systems through accessibility, Core Web Vitals, tests and better team workflows.
 
-``` bash
-# Make sure that you have the Gatsby CLI program installed
-npm install --global gatsby-cli
+## How I Build
 
-# run from your CLI
-gatsby new gatsby-example-blog https://github.com/cosmicjs/gatsby-blog-cosmicjs
-```
-In `gatsby-config.js` you need to add configuration for your Cosmic Bucket
+- Product UI: React, Next.js, TypeScript, GraphQL, Tailwind CSS, Sass, Framer Motion.
+- Data and backend: Node.js, Supabase, PostgreSQL, Prisma, Redis, Zod.
+- Quality: Jest, React Testing Library, Vitest, Playwright, axe-core, TypeScript, ESLint, Knip.
+- Delivery: GitHub Actions, Docker, Vercel, Sentry, bundle analysis and CI gates.
+- AI and tooling: MCP servers, semantic search, LLM integrations, knowledge graph experiments.
 
-``` javascript
-{
-  resolve: 'gatsby-source-cosmicjs',
-  options: {
-    bucketSlug: '', /* Find this in Your Bucket > Settings > Basic Settings after logging in at https://app.cosmicjs.com/login */
-    objectTypes: ['posts', 'settings'], /* Object types to fetch */
-    apiAccess: {
-      read_key: '', /* Find this in Your Bucket > Settings > API Access after logging in at https://app.cosmicjs.com/login */
-    },
-    localMedia: true /* Optional. If you want to enable local image for Gatsby Image */
-  }
-},
-```
+## Featured Products
 
-Then
+| Product | What I built | Stack |
+| --- | --- | --- |
+| [Brew Notes](https://brew.sebasruiz.com) | Local-first knowledge management app with AI, markdown editing, wiki-links, semantic search, offline-first sync and MCP-oriented architecture. | Next.js, TypeScript, Supabase, Tailwind CSS, AI SDK, MCP, Turbo |
+| [Memora](https://memorabooks.co) | E-commerce platform for custom premium photobooks, including catalog, album builder, photo upload, checkout and order workflows. | Next.js, TypeScript, Prisma, Supabase, PostgreSQL, Vitest, Playwright |
+| [Personal Website](https://sebasruiz.com) | Portfolio and professional home for my work, experience and selected projects. | Next.js, TypeScript, React, Sass, Framer Motion |
 
-``` bash
-# Then you can run it by
-cd gatsby-example-blog
-npm run develop
-```
+## Open Source And Public Work
 
-## Enable content auto refresh
-To enable content auto refresh, open another terminal window and run the following command:
-```
-npm run poll-content
-```
-This will poll the content in your Bucket for any updates and automatically refresh it in your blog during development. Learn more about refreshing content in the [Gatsby docs](https://www.gatsbyjs.com/docs/refreshing-content/).
+| Repository | Why it matters | Stack |
+| --- | --- | --- |
+| [evernote-mcp-server](https://github.com/imsebarz/evernote-mcp-server) | Unofficial Evernote API client and MCP server with CRUD operations, semantic search, AI tools, Docker support and proxy options. | TypeScript, Node.js, MCP SDK, Docker |
+| [notes-graph-visualizer](https://github.com/imsebarz/notes-graph-visualizer) | 3D knowledge graph visualizer for Evernote notes. | Next.js, TypeScript, Three.js, React Force Graph |
+| [frontend-school-landing](https://github.com/imsebarz/frontend-school-landing) | MVP landing page for a subscription-based frontend and AI education product. | Next.js, TypeScript, Tailwind CSS |
+| [Gestion-Restaurantes](https://github.com/imsebarz/Gestion-Restaurantes) | Restaurant management application built as a full web product. | TypeScript, React, SQL, testing |
+| [readwise-clone](https://github.com/imsebarz/readwise-clone) | Service concept for extracting Kindle and Google Books highlights and syncing them to Evernote. | TypeScript, Turbo, Docker |
+| [voting-system](https://github.com/imsebarz/voting-system) | Decentralized voting system on Ethereum Sepolia. | Solidity, React, Hardhat, Web3 |
 
-## Deploy to Netlify
-You can deploy to Netlify in a few steps using their CLI. Run the following commands from the root folder.
-```
-npm i -g netlify-cli
-netlify deploy
-```
+## Experience Signals
 
-#### Set your Environment Variables in Netlify
-In the Netlify dashboard, set your environment variables located in <i>Site Settings > Build and Deploy > Environment</i>. Find your Cosmic Bucket keys located in <i>Bucket > Basic Settings</i> after <a href="https://app.cosmicjs.com/login">logging in</a>.
-```
-COSMIC_BUCKET=<your-bucket-slug>
-COSMIC_READ_KEY=<your-bucket-read-key>
-```
+- 5+ years building frontend applications for production users.
+- Senior Web UI Developer at Globant, working with Choice Hotels International.
+- Strong recent focus on TypeScript-heavy product work across public and private repositories.
+- Experience with performance optimization, WCAG accessibility, A/B testing, GraphQL integrations and CI/CD.
+- Comfortable mentoring developers, reviewing code and turning ambiguous product ideas into shipped software.
+
+## GitHub Snapshot
+
+<p>
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=imsebarz&show_icons=true&theme=github_dark&hide_border=true&rank_icon=github" alt="Sebastian Ruiz GitHub stats" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=imsebarz&layout=compact&theme=github_dark&hide_border=true&langs_count=8" alt="Sebastian Ruiz top languages" />
+</p>
+
+## Connect
+
+I am open to senior frontend roles, product engineering work and collaborations where performance, accessibility and polished UX matter.
+
+- Portfolio: [sebasruiz.com](https://sebasruiz.com)
+- Resume: [sebasruiz.com/resume.pdf](https://sebasruiz.com/resume.pdf)
+- LinkedIn: [linkedin.com/in/imsebarz](https://www.linkedin.com/in/imsebarz/)
+- Email: [imsebarz@gmail.com](mailto:imsebarz@gmail.com)
